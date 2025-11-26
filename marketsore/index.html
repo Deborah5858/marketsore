@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <h2 class="logo">Market Store</h2>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#cart">Cart (<apan id="cartCount">0</apan>)</a></li>
+        </ul>
+        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+   </header>  
+   
+   <!--hero section-->
+   <section id="hero" class="hero">
+    <h1>Shop Quality Product</h1>
+    <p>Fast Delivery,Best Prices and Trusted Market</p>
+
+    <a href="#Products" class="btn">Shop Now</a>
+   </section>
+
+   <!---product sectiotion--->
+  <section id="products" class="products-section">
+    <h2 class="section-title">Our Products</h2>
+    <div class="product-grid">
+
+        <div class="product-card">
+           <img src="/marketsore/img/yam.jpeg" alt="img" width="250px" height="250px">
+           <h3>Yam Tubers</h3> 
+           <p>$1/piece</p>
+           <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+          <div class="product-card">
+           <img src="/marketsore/img/rice.jpeg" alt="img" width="250px" height="250px">
+           <h3>Rice (5kg)</h3> 
+           <p>$5/piece</p>
+           <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+           <img src="/marketsore/img/watermelon.jpeg" alt="img" width="250px" height="250px">
+           <h3>Watermelon</h3> 
+           <p>$1.5/piece</p>
+           <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+         <
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+     let nav =
+     document.getElementById("navMenu");
+     if (nav.style.right === "0px") {
+        nav.style.right = "-200px";
+     } else {
+        nav.style.right = "0px";
+     }
+    }
+    let cart = 0;
+    function addToCart() {
+        cart++;
+
+        document.getElementById("cartCount").innerText = cart;
+        alert("Item added to cart!");
+    }
+  </script>
+</body>
+</html>
