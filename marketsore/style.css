@@ -11,6 +11,7 @@
     padding: 15px 20px;
     background: #0a3d62;
     color: #fff;
+    cursor: pointer;
 }
 .navbar .logo{
     font-size: 22px;
@@ -43,17 +44,23 @@
     text-align: center;
     padding-top: 120px;
 }
+.hero p{
+    padding: 30px;
+    font-size: 20px;
+}
 .hero .btn{
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px 20px;
-    background: #3ca0e3;
+    background: blue;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
+    cursor: pointer;
 }
 .hero .btn:hover{
-    background: blue;
+    background: navy;
+    
 }
 /*product*/
 .products-section{
@@ -92,7 +99,37 @@
     border-radius: 5px;
 }
 .product-card button:hover{
-    background: #074d82;
+    background: #3b586c;
+}
+/*order form*/
+.order-form{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 6px;
+}
+.order-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.submit{
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    background: #3ca0e3;
+    border: none;
+    cursor: pointer;
+}
+.submit:hover{
+    background: navy;
+    color: #fff;
+}
+footer{
+   text-align: center; 
+   background: #000;
+   color: #fff;
+   padding: 10px;
 }
 
 /*responsive*/
